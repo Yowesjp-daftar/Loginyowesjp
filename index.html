@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Promo Spesial YOWESJP</title>
+<meta name="description" content="Dapatkan buku terbaik kami dengan promo menarik!">
+<style>
+  body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f7f7f7;
+    display:flex;
+    justify-content:center;
+  }
+
+  .wrapper {
+    max-width:480px;
+    width:100%;
+    background:#fff;
+    text-align:center;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    margin:20px;
+    animation:fadeIn 0.8s ease;
+  }
+
+  @keyframes fadeIn {
+    from {opacity:0; transform:translateY(10px);}
+    to {opacity:1; transform:translateY(0);}
+  }
+
+  header {
+    padding:15px 0;
+  }
+
+  header img.logo {
+    width:120px;
+    height:auto;
+    margin-bottom:10px;
+    animation:fadeInLogo 1s ease;
+  }
+
+  @keyframes fadeInLogo {
+    from {opacity:0; transform:translateY(-10px);}
+    to {opacity:1; transform:translateY(0);}
+  }
+
+  /* Slider */
+  .slider-container {
+    position:relative;
+    overflow:hidden;
+    border-radius:6px;
+  }
+
+  .slides {
+    display:flex;
+    transition:transform 0.5s ease-in-out;
+  }
+
+  .slides img {
+    width:100%;
+    flex-shrink:0;
+  }
+
+  /* Indicator dots */
+  .dots {
+    text-align:center;
+    padding:10px 0;
+    background:#fff3cd;
+  }
+
+  .dot {
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin:0 5px;
+    background:#ff9800;
+    border-radius:50%;
+    cursor:pointer;
+    transition:0.3s;
+  }
+
+  .dot.active {
+    background:#ff5722;
+    transform:scale(1.2);
+  }
+
+  .buttons {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    padding:20px 20px 10px;
+  }
+
+  .btn {
+    width:90%;
+    max-width:300px;
+    padding:15px 0;
+    font-weight:bold;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:1.1em;
+    color:#fff;
+    background: linear-gradient(90deg, #ff9800, #ff5722);
+    transition:0.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .btn:hover {
+    transform:translateY(-3px) scale(1.02);
+    box-shadow:0 6px 12px rgba(0,0,0,0.3);
+    background: linear-gradient(90deg, #ff5722, #ff9800);
+  }
+
+  .about {
+    background:#fff3cd;
+    padding:20px;
+    font-size:0.95em;
+    color:#444;
+    text-align:left;
+    border-top:1px solid #ffe082;
+    animation:fadeIn 1s ease;
+  }
+
+  .about h2 {
+    text-align:center;
+    color:#ff6f00;
+    margin-bottom:10px;
+  }
+
+  .about ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+
+  .about li {
+    position:relative;
+    padding-left:22px;
+    margin-bottom:10px;
+  }
+
+  .about li::before {
+    content:"✅";
+    position:absolute;
+    left:0;
+  }
+
+  /* Tombol bulat / floating */
+  .floating-btn {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:url('assets/tombol.png') no-repeat center/cover;
+    box-shadow:0 4px 12px rgba(0,0,0,0.3);
+    cursor:pointer;
+    z-index:1000;
+    transition:0.3s;
+  }
+
+  .floating-btn:hover {
+    transform:translateY(-5px) scale(1.1);
+    box-shadow:0 8px 20px rgba(0,0,0,0.4);
+  }
+
+  @media(min-width:481px) {
+    .btn {
+      width:60%;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <!-- Logo -->
+      <img src="assets/gg.png" alt="Logo" class="logo">
+
+      <!-- Slider -->
+      <div class="slider-container">
+        <div class="slides">
+          <img src="assets/Ajib.webp" alt="Banner Buku 1">
+          <img src="assets/Ajib.webp" alt="Banner Buku 2">
+          <img src="assets/Ajib.webp" alt="Banner Buku 3">
+        </div>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tombol CTA -->
+    <div class="buttons">
+      <a href="https://heylink.me/YOWESJP" class="btn" target="_blank">Gabung</a>
+      <a href="https://heylink.me/YOWESJP" class="btn" target="_blank">Join</a>
+    </div>
+
+    <!-- Tentang agen YOWESJP -->
+    <section class="about">
+      <h2>Tentang Agen YOWESJP</h2>
+      <ul>
+        <li>Min Deposit | Rp. 5.000,-</li>
+        <li>Permainan    | Togel Online, Toto Online, Live Casino</li>
+        <li>Ketuntungan situs | bisa bet togel 10 PERAK</li>
+</li>Opsi Deposit | All Bank, E-Wallet, Pulsa, QRIS</li>
+</li>Mata Uang | Rupiah  </li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Tombol floating / promo / livechat -->
+  <a href="https://heylink.me/YOWESJP" class="floating-btn" title="Daftar / Livechat" target="_blank"></a>
+
+<script>
+  // Slider JS
+  const slides = document.querySelector('.slides');
+  const slideImages = document.querySelectorAll('.slides img');
+  const dots = document.querySelectorAll('.dot');
+  let index = 0;
+
+  function showSlide(i){
+    slides.style.transform = 'translateX('+(-i*100)+'%)';
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[i].classList.add('active');
+  }
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      index = i;
+      showSlide(index);
+    });
+  });
+
+  function nextSlide(){
+    index++;
+    if(index >= slideImages.length) index = 0;
+    showSlide(index);
+  }
+
+  setInterval(nextSlide, 4000); // Slide otomatis setiap 4 detik
+</script>
+</body>
+</html>
